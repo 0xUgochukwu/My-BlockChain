@@ -1,4 +1,4 @@
-const SHA256 = require("crypto-js/sha256")
+import SHA256 from "crypto-js/sha256"
 
 //Block data
 class Block {
@@ -15,7 +15,7 @@ class Block {
 class BlockChain {
     constructor () {
         this.chain = [],
-        this.addBlock(new Block("this is the first block in the chain - Genesis block"))
+        this.addBlock(new Block("Genesis block"))
     }
 
     //Add data to block
