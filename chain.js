@@ -1,6 +1,6 @@
 const SHA256 = require("crypto-js/sha256")
 
-//class with constructor for block data
+//Block data
 class Block {
     constructor (data) {
         this.hash = "",
@@ -11,21 +11,21 @@ class Block {
     }
 }
 
-//class with constructor for a new blockchain
+//New blockchain
 class BlockChain {
     constructor () {
         this.chain = [],
         this.addBlock(new Block("this is the first block in the chain - Genesis block"))
     }
 
-    //function to add data to block
+    //Add data to block
     addBlock(newBlock) { 
 
         if(this.chain.length > 0){
             newBlock.previousBlockHash = this.chain[this.chain.length - 1].hash;
         }
 
-        //create hash with sha256 method
+        //create hash with sha256
         newBlock.hash = SHA256(JSON.stringify(newBlock)).toString();
         this.chain.push(newBlock);
     }
