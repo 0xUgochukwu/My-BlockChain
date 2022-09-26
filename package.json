@@ -1,0 +1,23 @@
+{
+  "name": "my-blockchain",
+  "version": "1.0.0",
+  "description": "A Private blockchain",
+  "main": "chain.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Khay-EMMA/private_blockchain.git"
+  },
+  "author": "Chukwuma Ugochukwu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Khay-EMMA/private_blockchain/issues"
+  },
+  "homepage": "https://github.com/Khay-EMMA/private_blockchain#readme",
+  "dependencies": {
+    "crypto-js": "^4.0.0"
+  },
+  "devDependencies": {}
+}
