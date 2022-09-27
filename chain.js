@@ -33,8 +33,8 @@ class BlockChain {
 
 let blockchain = new BlockChain();
 
-blockchain.addBlock(new Block("test"))
+blockchain.addBlock(new Block("test"));
 
 let chainData = blockchain.chain;
 
-console.log(chainData, "blockchain data")
+console.log(chainData, "blockchain data");
